@@ -1,0 +1,168 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[inner=1in,outer=1in,top=1in,bottom=1in]{geometry}
+\pagestyle{empty}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{\CourseTitle} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\CourseSemester \CourseYear} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+\usepackage{tabularx}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xspace}
+
+\newcommand{\CourseNumber}{NPRENNN}
+\newcommand{\CourseTitle}{Course Title\xspace}%
+\newcommand{\CourseInstructor}{Prof. Kathryn Huff\xspace}%
+\newcommand{\CourseSemester}{Fall\xspace}%
+\newcommand{\CourseYear}{2016\xspace}%
+\newcommand{\CourseDays}{MWF\xspace}%
+\newcommand{\CourseStart}{10:00\xspace}%
+\newcommand{\CourseEnd}{11:30\xspace}%
+\newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
+\newcommand{\CourseRoom}{107\xspace}%
+\newcommand{\CourseBuilding}{Talbot Hall\xspace}%
+\newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
+%\newcommand{\Course<++>}{<++>}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\CourseNumber: \CourseTitle\\}
+\author{\CourseUniversity}
+\date{\CourseSemester \CourseYear}
+\begin{document}
+\maketitle
+%\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+\begin{center}
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{rXrX}
+\hline
+\textbf{Instructor:} & \CourseInstructor & \textbf{Time:} & \CourseDays \CourseStart -- \CourseEnd \\
+\textbf{Email:} &  \href{mailto:\CourseInstructorEmail}{\CourseInstructorEmail} & \textbf{Place:} & \CourseRoom \CourseBuilding\\
+\hline
+\end{tabularx}
+\end{table}
+\end{center}
+
+\paragraph{Course Pages:}
+\begin{enumerate}
+\item \url{http://katyhuff.github.io/\CourseNumber}
+\item \url{http://yourWebPage2.com/teaching}
+\end{enumerate}
+
+\paragraph{Office Hours:} After class, or by appointment, or post your 
+questions in the forum provided for this purpose online.
+
+\paragraph{Main References:}
+A few essential references for this course are listed below. The required course for this text is \cite{req}.
+\nocite{*}
+\bibliographystyle{unsrt}
+\renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm} 
+\bibliography{bibliography}
+
+\paragraph{Objectives:} 
+
+Learning objectives include:
+
+\begin{itemize}
+\item Quantitative analysis of the impact of the nuclear power industry; 
+\item nuclear fuel cycle and capital costs for thermal and fast reactors; 
+\item optimization of the use of nuclear fuels to provide the lowest energy costs and highest system performance; 
+\item comparison between fossil fuel systems, fission systems, and controlled thermonuclear fusion systems.
+\item <+objective+>
+\item <+objective+>
+\item <+objective+>
+\end{itemize}
+
+\paragraph{Prerequisites:} 
+\begin{itemize}
+\item <+standing+> standing is required.
+\item <+required courses+>
+\item <+other+>
+\end{itemize}
+
+\paragraph{Course Schedule:}
+\textit{Note that this is subject to change}
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{llXr}
+\textbf{Session} & \textbf{Date} & \textbf{Topic} & \textbf{Homework Due}\\
+\hline
+<+lecnum+> & <+date+> & \href{<+url>}{<+Topic+>} & <+hwnum+>\\
+<+lecnum+> & <+date+> & \href{<+url>}{<+Topic+>} & <+hwnum+>\\
+<+lecnum+> & <+date+> & \href{<+url>}{<+Topic+>} & <+hwnum+>\\
+<+lecnum+> & <+date+> & \href{<+url>}{<+Topic+>} & <+hwnum+>\\
+\hline
+\end{tabularx}
+\end{table}
+
+\paragraph{Grading Policy:} Grades will be assigned as a weighted sum of the following work. 
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{Xr}
+\textbf{Work} & \textbf{Weight}\\
+\hline
+\textbf{<+item+>} & (<+percent+>\%) \\
+\textbf{<+item+>} & (<+percent+>\%) \\
+\textbf{<+item+>} & (<+percent+>\%) \\
+\textbf{<+item+>} & (<+percent+>\%) \\
+\hline
+\textbf{Total} & (<+percent+>\%) \\
+\end{tabularx}
+\end{table}
+
+\paragraph{Important Dates:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+Midterm \#1      \dotfill ~\={A}b\={a}n 16, 1393  \\
+Midterm \#2      \dotfill ~\={A}zar 21, 1393  \\
+%Project Deadline \dotfill ~Month Day \\
+Final Exam       \dotfill ~Dey 18, 1393  \\
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+\paragraph{Class Policies:}  
+
+\begin{itemize}
+\item[] \textbf{Integrity:} This is an institution of higher
+learning. You will be swiftly ejected from the course if you are caught
+undermining its integrity. Note the
+\href{http://www.provost.illinois.edu/academicintegrity/students.html}{Student's
+Quick Reference Guide to Academic Integrity} and the
+\href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic
+Integrity Policy and Procedure}.  
+\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval for absence for extenuating circumstances prior to absence.
+\item[] \textbf{Electronics:} Active participation is essential and expected. 
+        Accordingly, students must turn off all electronic devices (laptop, 
+        tablets, cellphones, etc.) during class. Exceptions may be granted for 
+        laptops if engaging in computational exercises or taking notes. 
+\item[] \textbf{Collaboration:} Collaboratively reviewing course materials and studying for exams with fellow students can be enriching.  This is recommended.  However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one's own independent work.
+\end{itemize}
+
+\paragraph{Accessibility:} Please contact me as soon as possible if you need
+particular accommodations, and we will work out the necessary arrangements.
+
+\paragraph{Mental Health Resources:} 
+University students typically experience a wide range of stressors during their time here. Accordingly, campus resources exist to help students manage their stress levels and general mental health while navigating this environment. I hope you will take advantage of these campus resources as soon as they can be of help.
+
+\begin{itemize}
+\item \href{http://www.mckinley.illinois.edu/clinics/mental\_health.htm}{McKinley Mental Health Clinic}
+\item \href{http://counselingcenter.illinois.edu/}{Counselling Center}
+\end{itemize}
+%%%%%% THE END 
+\end{document} 
