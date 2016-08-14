@@ -11,6 +11,8 @@
 \definecolor{red}{rgb}{.98,0,0}
 \usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
 \pagestyle{fancyplain}
 \fancyhf{}
@@ -155,12 +157,24 @@ Integrity Policy and Procedure}.
         tablets, cellphones, etc.) during class. Exceptions may be granted for 
         laptops if engaging in computational exercises or taking notes. 
 \item[] \textbf{Collaboration:} Collaboratively reviewing course materials and studying for exams with fellow students can be enriching.  This is recommended.  However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one's own independent work.
+\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is, adjusted for lateness, your grade $G(t)$ is a decaying percentage of the raw grade $G_0$. An assignment turned in $t$ hours late will recieve a grade according to the following relation:
+\begin{align*}
+        G(t) &= G_0e^{-\lambda t}
+        \intertext{where}
+        G(t) &= \mbox{grade adjusted for lateness}\\
+        G_0 &= \mbox{raw grade}\\
+        \lambda &= \frac{ln(2)}{t_{\frac{1}{2}}} = \mbox{decay constant} \\
+        t &= \mbox{time elapsed since due [hours]}\\
+        t_{1/2} &= 1 = \mbox{half-life [hours]} \\
+\end{align*}
+\item[] \textbf{Make-up Work:} There will be no negotiation about late work except in the case of absence documented by an absence letter from the Dean of Students.  The university policy for requesting such a letter is in \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the Student Code}. Please note that such a letter is appropriate for many types of conflicts, but that religious conflicts require special early handling. In accordance with university policy, students seeking an excused absence for religious reasons should complete the Request for Accommodation for Religious Observances Form, which can be found on the Office of the Dean of Students website. The student should submit this form to the instructor and the Office of the Dean of Students by the end of the second week of the course to which it applies. 
+
 \end{itemize}
 
 \paragraph{Accessibility:} I hope that this course will be inclusive and 
 accommodating for all learners. As such, I am committed upholding the vision 
-and values of [Inclusive 
-Illinois](http://www.inclusiveillinois.illinois.edu/index.html) in my 
+and values of \href{http://www.inclusiveillinois.illinois.edu/index.html}{Inclusive Illinois}
+in my 
 classroom.  With regard to accommodating all learners, please note that many 
 resources are provided through 
 \href{http://disability.illinois.edu/academic-support/accommodations}{the 
