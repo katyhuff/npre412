@@ -1,0 +1,81 @@
+%        File: wk1.tex
+%     Created: Sat Aug 20 01:00 PM 2016 C
+% Last Change: Sat Aug 20 01:00 PM 2016 C
+%
+
+% use the answers clause to get answers to print; otherwise leave it out.
+\documentclass[12pts]{exam}
+%\documentclass[12pts]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{NPRE 412}
+\newcommand{\term}{Fall 2016}
+\newcommand{\assignment}{R1}
+\newcommand{\duedate}{2016.09.02}
+%\newcommand{\timelimit}{50 Minutes}
+
+\newcommand{\nth}{n\ensuremath{^{\text{th}}} }
+\newcommand{\ve}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Macro}{\ensuremath{\Sigma}}
+\newcommand{\vOmega}{\ensuremath{\hat{\Omega}}}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+%\unframedsolutions
+\usepackage{bibentry}
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\assignment\ - Page \thepage\ of \numpages}{Due \duedate}
+\runningheadrule
+
+\begin{flushright}
+        \begin{tabular}{p{5in} r l}
+                \class & \term \\
+                \assignment & Due \duedate
+        \end{tabular}
+\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+\qformat{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ---------------------------------------------
+
+\begin{questions}
+        \question \textbf{Required: } 
+        \cite{tsoulfanidis_nuclear_2013}
+        \cite{tsoulfanidis_nuclear_2013-1}
+        \cite{nuclear_energy_institute_presentation:_2016}
+
+        \question \textbf{Recommended: }
+        \cite{nuclear_energy_institute_video:_2016}
+        \cite{eia_annual_2015}
+        \cite{iea_key_2016}
+\end{questions}
+
+
+        \bibliography{wk1}
+        \bibliographystyle{plain}
+        
+
+\end{document}
+
+
