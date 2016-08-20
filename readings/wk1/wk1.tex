@@ -13,12 +13,11 @@
 % to work on them.
 \usepackage[margin=1in]{geometry}
 \usepackage{enumerate}
-\usepackage{hyperref}
 
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{NPRE 412}
 \newcommand{\term}{Fall 2016}
-\newcommand{\assignment}{R1}
+\newcommand{\assignment}{Reading List Week 1}
 \newcommand{\duedate}{2016.09.02}
 %\newcommand{\timelimit}{50 Minutes}
 
@@ -36,7 +35,26 @@
 \parindent 0ex
 
 %\unframedsolutions
-\usepackage{bibentry}
+%\usepackage{bibentry}
+\usepackage[hyphens]{url}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{breaklinks=true}
+\usepackage{splitbib}
+
+
+
+\begin{category}{Required}
+        \SBentries{tsoulfanidis_nuclear_2013}
+        \SBentries{tsoulfanidis_nuclear_2013-1}
+        \SBentries{nuclear_energy_institute_presentation:_2016}
+\end{category}
+\begin{category}{Recommended}
+        \SBentries{nuclear_energy_institute_video:_2016}
+        \SBentries{eia_annual_2015}
+        \SBentries{iea_key_2016}
+\end{category}
+
+
 \begin{document} 
 
 % These commands set up the running header on the top of the exam pages
@@ -58,24 +76,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % ---------------------------------------------
+\Urlmuskip=0mu plus 1mu\relax
 
+\nocite{*}
+\renewcommand\refname{}
+\bibliographystyle{plainurl}
+\bibliography{wk1}
 \begin{questions}
-        \question \textbf{Required: } 
-        \cite{tsoulfanidis_nuclear_2013}
-        \cite{tsoulfanidis_nuclear_2013-1}
-        \cite{nuclear_energy_institute_presentation:_2016}
-
-        \question \textbf{Recommended: }
-        \cite{nuclear_energy_institute_video:_2016}
-        \cite{eia_annual_2015}
-        \cite{iea_key_2016}
+        \question
 \end{questions}
 
 
-        \bibliography{wk1}
-        \bibliographystyle{plain}
-        
-
 \end{document}
-
 
