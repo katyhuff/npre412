@@ -21,7 +21,7 @@ go to
 
 If you have trouble, it may be due to the mybinder servers being overloaded. 
 This is a fairly common occurance, because their servers are funded entirely by 
-the academic budget of [Prof. Jeremy Freeman.](http://thefreemanlab.com/).
+the research budget of [Dr. Jeremy Freeman.](http://thefreemanlab.com/).
 You can find out the status of mybinder [on their status 
 page](http://mybinder.org/status).
 
