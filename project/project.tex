@@ -1,0 +1,198 @@
+% use the answers clause to get answers to print; otherwise leave it out.
+\documentclass[12pts, answers]{exam}
+%\documentclass[12pts]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{NPRE 412}
+\newcommand{\term}{Fall 2016}
+\newcommand{\assignment}{Final Project}
+\newcommand{\duedate}{2016.12.07}
+%\newcommand{\timelimit}{50 Minutes}
+
+\newcommand{\nth}{n\ensuremath{^{\text{th}}} }
+\newcommand{\ve}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Macro}{\ensuremath{\Sigma}}
+\newcommand{\vOmega}{\ensuremath{\hat{\Omega}}}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+%\unframedsolutions
+\usepackage{bibentry}
+\begin{document} 
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\assignment\ - Page \thepage\ of \numpages}{Due \duedate}
+\runningheadrule
+
+\class \hfill \term \\
+\assignment \hfill Due \duedate\\
+%\begin{flushright}
+%\begin{tabular}{p{5in} r l}
+%\end{tabular}
+%\end{flushright}
+\rule[1ex]{\textwidth}{.1pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+If you are a graduate student in NPRE 412, a large part of your grade is earned 
+with a final project.  It is intended to tie together the lessons of the course
+with an independent analysis of a relevant topic in the context of nuclear
+power economics and fuel management (or, the nuclear fuel cycle). The project
+will be assessed as independent research work, much like a journal article
+undergoes peer review. I will be looking for :
+
+\begin{itemize}
+\item Relevance
+\item Novelty
+\item Technical Detail
+\item Analytic Rigor
+\item Verifiability
+\item Clarity
+\item A Conclusion
+\end{itemize}
+
+This work will consist of two deliverables, a proposal and a final report.
+
+
+% ---------------------------------------------
+\begin{questions}
+\addpoints
+% intro
+\question[10] \textbf{Proposal: Due 2016.10.10}
+
+To help determine of reasonable scope, the first step of the project will be a
+proposal. Once you submit this proposal, I will respond with feedback. Much
+like a conference abstract, the proposal should meet the following guidelines:
+
+\begin{itemize}
+\item Minimum 500 words.
+\item Maximum 1000 words.
+\item Two columns.
+\item Reasonable margins.
+\item 10 pt font or larger.
+\item State the question you plan to answer.
+\item Summarize the current state of the art in the literature.
+\item Motivate the problem, explaining its relevance.
+\item Describe the approach and methods you will take to answer the question.
+\item Propose an outline of the analysis, software, data, and/or conclusions that will be delivered.
+\end{itemize}
+
+Please arrange at least one short meeting with me before the project proposal
+so that I can help you refine your topic. I would be happy to provide feedback
+on a draft of your proposal (once) before it is due. For your guidance, a list
+of example topics appears at the end of this document. Feel free to choose one
+of these.  However, choosing a creative topic of your choice is
+encouraged.
+
+
+\question[90] \textbf{Final Report: Due \duedate}
+
+Prepare a final document in the style of a journal article or conference
+proceedings. It should meet the following guidelines:
+
+\begin{itemize}
+\item Minimum 3000 words.
+\item Maximum 10000 words.
+\item Two columns.
+\item Reasonable margins.
+\item 10 pt font or larger.
+\item State the question you answered.
+\item Comprehensively report and cite the current state of the art in the literature.
+\item Motivate the problem, explaining its relevance.
+\item Describe the approach, methods, and other elements of your solution.
+\item Describe in detail: the analysis, software, data, conclusions produced in this work.
+\item Include publication quality graphs and figures.
+\item Cite and provide data and code generated for this work sufficient to reproduce the conclusions.
+\item Compare this result to previous results in the literature, reinforce the relevance of the work.
+\item Suggest future work.
+\end{itemize}
+
+\end{questions}
+
+
+\section*{Topic Examples}
+For your guidance, a list of example topics appears here.
+Feel free to choose one of these.  However, choosing a creative topic
+of your choice is encouraged. This section may be expanded if I have new ideas
+as the semester progresses.
+
+\paragraph{Impact of a Zero Emissions Tax Credit} New York state recently
+(summer 2016) implemented a zero emissions tax credit. It was enough to save
+the Fitzpatrick nuclear generating station. Were the parameters of that
+state-level to be implemented accross the US, either federally or individually
+in each state, the risk of owning and building nuclear plants would decrease.
+Quantify the change in risk. Predict the impacts to the nuclear industry. Would
+it be enough to save at-risk plants? Would we likely see an increase in new
+builds? What other impacts might we see?
+
+\paragraph{The Likelihood and Implications of the Duck Curve} The California
+Independent System Operators published the ``duck chart.'' This curve,
+describing the predicted mid-day overgeneration of grid-bound electricity,
+caused by installations of solar, primarily, makes load-following generation
+sources or storage methods necessary. A few questions that would make
+interesting projects on this topic include:
+\begin{itemize}
+\item What is the level of alarm appropriate in reaction to this chart and why?
+\item Can you suggest a novel strategy that would allow nuclear generation to
+be adapted to load follow?
+\item What would the impact to nuclear power be if this situation is allowed to
+proceed and there is no curtailment of variable generation sources?
+\item How could current storage technologies smooth this curve?
+\end{itemize}
+
+\paragraph{Liquid vs. Solid Fuelled Molten Salt Reactor Source Term and Release
+Pathways} Reactor designs involving molten salts can have either solid fuel or
+fluidized fuel. In the fluid fuel case, proponents are often heard to say they
+can't melt down because they operate safely at a melted state. Compare the
+source term and release pathways of a containment breach in a solid fuelled
+salt reactor vs. a fluid fuelled one.
+
+\paragraph{Economics of Uranium Extraction of Seawater} A great deal of
+research is being undertaken to lower the costs of uranium extraction from
+seawater. Can you replicate the results of a previous calculation of those
+costs? To what extent are those results sensitive to uncertain assumptions
+(assumptions of a political, technical, or economic nature, it matters not.)
+
+\paragraph{Metrics for Proliferation in the Nuclear Fuel Cycle} Suggest a
+metric that captures proliferation concern in a nuclear fuel cycle scenario.
+
+\paragraph{Assessment of Dose To Workers in Reprocessing Schemes} Propose a model for
+calculating the dose impact on workers within an arbitrary fuel cycle. Include
+dose due to all steps of the fuel cycle, including reprocessing and disposal.
+Compare and contrast fuel cycle strategies with and without reprocessing.
+
+\paragraph{Fuel Cycle Transition Scenario} Choose one of the Evaluation Groups
+identified by the Fuel Cycle Options Evaluation and Screening. Use a simulator
+(e.g. Cyclus, CLASS, or Orion) or your own model to assess the
+time-to-transition from our current reactor fleet to 100\% deployment of the
+new technology (e.g. SFRs, MSRs, etc.)
+
+\paragraph{Repository Cost Estimation} Suggest a high level waste repository
+site. Suggest appropriate waste forms, waste packages, and other disposal
+system design features for this geology. Estimate construction rates, loading
+rates, transportation costs, and a closing timeline. With these estimates,
+defended by analysis, conduct a life cycle cost estimation of your proposed
+site.
+
+%\bibliographystyle{plain}
+%\bibliography{}
+
+\end{document}
+
