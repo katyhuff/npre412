@@ -1,0 +1,125 @@
+%        File: ief.tex
+%     Created: Wed Oct 05 08:00 AM 2016 C
+% Last Change: Wed Oct 05 08:00 AM 2016 C
+%
+
+% use the answers clause to get answers to print; otherwise leave it out.
+\documentclass[12pts, answers, addpoints]{exam}
+%\documentclass[12pts]{exam}
+\RequirePackage{amssymb, amsfonts, amsmath, latexsym, verbatim, xspace, setspace}
+
+% By default LaTeX uses large margins.  This doesn't work well on exams; problems
+% end up in the "middle" of the page, reducing the amount of space for students
+% to work on them.
+\usepackage[margin=1in]{geometry}
+\usepackage{enumerate}
+\usepackage{hyperref}
+
+% Here's where you edit the Class, Exam, Date, etc.
+\newcommand{\class}{NPRE412}
+\newcommand{\term}{Fall 2016}
+\newcommand{\assignment}{Informal Early Feedback}
+\newcommand{\duedate}{2016.10.05}
+%\newcommand{\timelimit}{50 Minutes}
+
+\newcommand{\nth}{n\ensuremath{^{\text{th}}} }
+\newcommand{\ve}[1]{\ensuremath{\mathbf{#1}}}
+\newcommand{\Macro}{\ensuremath{\Sigma}}
+\newcommand{\vOmega}{\ensuremath{\hat{\Omega}}}
+
+% For an exam, single spacing is most appropriate
+\singlespacing
+% \onehalfspacing
+% \doublespacing
+
+% For an exam, we generally want to turn off paragraph indentation
+\parindent 0ex
+
+%\unframedsolutions
+\usepackage{bibentry}
+\begin{document} 
+
+
+% These commands set up the running header on the top of the exam pages
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\assignment\ - Page \thepage\ of \numpages}{Due \duedate}
+\runningheadrule
+
+\class \hfill \term \\
+\assignment \hfill Due \duedate\\
+\rule[1ex]{\textwidth}{.1pt}
+%\hrulefill
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+\item Thank you so much for your feeback. 
+\item I will use this informal feedback to improve the course while you can still benefit. 
+\item No names please.
+\end{itemize}
+\rule[1ex]{\textwidth}{.1pt}
+
+% ---------------------------------------------
+\begin{questions}
+        % intro
+
+
+        \question The level of the homework is :
+
+\begin{checkboxes}
+\choice too hard
+\choice just right
+\choice too easy
+\end{checkboxes}
+
+
+
+        \question The pace of the course is :
+\begin{checkboxes}
+\choice too fast
+\choice just right
+\choice too slow
+\end{checkboxes}
+
+        \question Have you been keeping up with the reading assignments? 
+
+\begin{checkboxes}
+\choice 100\%
+\choice 90\%
+\choice 80\%
+\choice 70\%
+\choice 60\%
+\choice 50\%
+\choice 25\%
+\choice 0\%
+\end{checkboxes}
+
+	\question It's your turn to grade me. What grade would you give my teaching performance so far?
+
+\begin{checkboxes}
+\choice A
+\choice B
+\choice C
+\choice D
+\choice F
+\end{checkboxes}
+
+        \question How many hours do you spend on NPRE412 outside of class each week (homework/studying)?
+\makeemptybox{10mm}
+        \question What do I do currently that helps you learn? 
+\makeemptybox{40mm}
+        \question What can I do differently to help you learn better?
+\makeemptybox{40mm}
+        \question What is the biggest barrier to your learning in this class?
+\makeemptybox{40mm}
+
+\question You may use this space for any additional comments or feedback. Thank you. 
+        \makeemptybox{100mm}
+
+\end{questions}
+\end{document}
+
+
