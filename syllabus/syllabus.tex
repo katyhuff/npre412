@@ -10,7 +10,6 @@
 \definecolor{darkgreen}{rgb}{0,.6,0}
 \definecolor{red}{rgb}{.98,0,0}
 \usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
-%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 \usepackage{amsmath}
 \usepackage{amssymb}
 
@@ -32,21 +31,21 @@
 \newcommand{\CourseTitle}{Nuclear Power Economics and Fuel Management\xspace}%
 \newcommand{\CourseInstructor}{Prof. Kathryn Huff\xspace}%
 \newcommand{\CourseSemester}{Spring\xspace}%
-\newcommand{\CourseYear}{2020\xspace}%
+\newcommand{\CourseYear}{2021\xspace}%
 \newcommand{\CourseDays}{MWF\xspace}%
 \newcommand{\CourseStart}{10:00am\xspace}%
 \newcommand{\CourseEnd}{10:50am\xspace}%
 \newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
-\newcommand{\HuffOfficeHourPlace}{118 Talbot Laboratory\xspace}
-\newcommand{\CourseRoom}{225A\xspace}%
-\newcommand{\CourseBuilding}{Talbot Laboratory\xspace}%
+\newcommand{\HuffOfficeHourPlace}{\url{https://illinois.zoom.us/my.katyhuff}\xspace}
+\newcommand{\CourseRoom}{\href{https://illinois.zoom.us/j/81869304430}{Zoom: 818 6930 4430, PW: 412}\xspace}%
+\newcommand{\CourseBuilding}{\xspace}%
 \newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
-\newcommand{\TeachingAssistant}{Gwendolyn Chee\xspace}%
-\newcommand{\TAEmail}{Gwendolyn Chee\xspace}%
-\newcommand{\TAOfficeHourDays}{Wednesdays\xspace}%
-\newcommand{\TAOfficeHourStart}{11am\xspace}%
-\newcommand{\TAOfficeHourEnd}{noon\xspace}%
-\newcommand{\TAOfficeHourPlace}{226 Talbot Laboratory\xspace}
+%\newcommand{\TeachingAssistant}{Gwendolyn Chee\xspace}%
+%\newcommand{\TAEmail}{Gwendolyn Chee\xspace}%
+%\newcommand{\TAOfficeHourDays}{Wednesdays\xspace}%
+%\newcommand{\TAOfficeHourStart}{11am\xspace}%
+%\newcommand{\TAOfficeHourEnd}{noon\xspace}%
+%\newcommand{\TAOfficeHourPlace}{226 Talbot Laboratory\xspace}
 %\newcommand{\Course<++>}{<++>}
 %\newcommand{\Course<++>}{<++>}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,27 +72,27 @@
         \item \url{https://compass2g.illinois.edu}
         \item \url{https://github.com/katyhuff/\CourseNumber}
         \item \url{https://mybinder.org/v2/gh/katyhuff/npre412/master}
+        \item \CourseRoom
 \end{enumerate}
 
-\paragraph{TA Office Hours:} The teaching assistant for the course, 
-\TeachingAssistant, will hold office hours \TAOfficeHourDays from 
-\TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
+%\paragraph{TA Office Hours:} The teaching assistant for the course, 
+%\TeachingAssistant, will hold office hours \TAOfficeHourDays from 
+%\TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
 
 
 
-\paragraph{Professor Office Hours:} Prof. Huff will hold office hours by appointment
-only, in her office, \HuffOfficeHourPlace. Please make use of the teaching
-assistant and your colleagues before booking an appointment with Prof. Huff.
-You can make an appointment at \url{katyhuff.youcanbook.me}. Appointments 
-must be booked at least 24 hours ahead of time.
-If the door to \HuffOfficeHourPlace is open, Prof. Huff may be available for very brief 
-questions. In that case, feel free to drop by.
+\paragraph{Professor Office Hours:} Prof. Huff will hold office hours by 
+appointment on Zoom. You can make an appointment at 
+\url{katyhuff.youcanbook.me}. Appointments must be booked at least 24 hours 
+ahead of time.
+%If the door to \HuffOfficeHourPlace is open, Prof. Huff may be available for 
+%very brief questions. In that case, feel free to drop by.
 
 \paragraph{Main References:}
 A few essential references for this course will be assigned as readings. The 
 recommended text for this course is \cite{tsoulfanidis_nuclear_2013}.
 \bibliographystyle{unsrt}
-\renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm} 
+\renewcommand{\refname}{\normalfont\selectfont\normalsize}
 \bibliography{bibliography}
 
 \paragraph{Objectives:} 
@@ -111,7 +110,7 @@ This course will equip students to:
 
 \paragraph{Prerequisites:} 
 \begin{itemize}
-\item Junior standing is encouraged.
+        \item Junior standing is encouraged.
 \item NPRE 402 or 247
 \end{itemize}
 
@@ -122,51 +121,46 @@ following work.
 \begin{tabularx}{\textwidth}{Xrr}
         \textbf{Work} & \textbf{Weight (Undergraduate)} & \textbf{Weight (Graduate)} \\
 \hline
-\textbf{Quizzes}         & (10\%)   & (10\%)\\
-\textbf{Homework}        & (20\%)   & (20\%)\\
-\textbf{Midterm}         & (20\%)   & (20\%)\\
-\textbf{Long Read}       & (20\%)   & (20\%)\\
-\textbf{Project}         & (30\%)   & (30\%)\\
+\textbf{Quizzes}           & (10\%)   & (0\%)\\
+\textbf{Homework}          & (20\%)   & (30\%)\\
+\textbf{Project Proposal}  & (20\%)   & (20\%)\\
+\textbf{Long Read}         & (20\%)   & (20\%)\\
+\textbf{Final Project}     & (30\%)   & (30\%)\\
 \hline
-\textbf{Total}           & (100\%) & (100\%)\\
+\textbf{Total}             & (100\%) & (100\%)\\
 \end{tabularx}
 \end{table}
 
 \paragraph{Important Dates:}
 \begin{center} \begin{minipage}{3.8in}
 \begin{flushleft}
-Midterm      \dotfill 10:00-10:50am, March 13, 2020\\
+%Midterm      \dotfill 10:00-10:50am, March 13, 2021\\
 %Project Deadline \dotfill ~Month Day \\
-Project Presentations       \dotfill 7:00-10:00 p.m., May 12, 2020\\
+Final Presentations       \dotfill 8:00-11:00 a.m., Friday, May 14, 2021\\
 \end{flushleft}
 \end{minipage}
 \end{center}
 
-
-
-\paragraph{Class Policies:}
-
-\begin{itemize}
-\item[] \textbf{Integrity:} This is an institution of higher
-learning. You will be swiftly ejected from the course if you are caught
-undermining its integrity. Note the
-\href{http://www.provost.illinois.edu/academicintegrity/students.html}{Student's
-Quick Reference Guide to Academic Integrity} and the
-\href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic
-Integrity Policy and Procedure}.
-\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval
+\paragraph{Integrity:} This is an institution of higher learning. You will 
+        be swiftly ejected from the course if you are caught undermining its 
+                integrity. Note the 
+                \href{http://www.provost.illinois.edu/academicintegrity/students.html}{Student's 
+                Quick Reference Guide to Academic Integrity} and the 
+                \href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic 
+                Integrity Policy and Procedure}.
+\paragraph{Attendance:} Regular attendance is mandatory. Request approval
         for absence for extenuating circumstances prior to absence.
-\item[] \textbf{Electronics:} Active participation is essential and expected.
+\paragraph{Electronics:} Active participation is essential and expected.
         Accordingly, students must turn off all electronic devices (laptop,
         tablets, cellphones, etc.) during class. Exceptions may be granted for
         laptops if engaging in computational exercises or taking notes.
-\item[] \textbf{Collaboration:} Collaboratively reviewing course materials and
+\paragraph{Collaboration:} Collaboratively reviewing course materials and
         studying for exams with fellow students can be enriching.  This is
                 recommended.  However, unless otherwise instructed, homework
                 assignments are to be completed independently and materials
                 submitted as homework should be the result of one's own
                 independent work.
-\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is,
+\paragraph{Late Work:} Late work has a halflife of 1 hour. That is,
         adjusted for lateness, your grade $G(t)$ is a decaying percentage of
                 the raw grade $G_0$. An assignment turned in $t$ hours late
                 will receive a grade according to the following relation:
@@ -179,23 +173,60 @@ Integrity Policy and Procedure}.
         t &= \mbox{time elapsed since due [hours]}\\
         t_{1/2} &= 1 = \mbox{half-life [hours]} \\
 \end{align*}
-\item[] \textbf{Make-up Work:} There will be no negotiation about late work
-        except in the case of absence documented by an absence letter from the
-                Dean of Students.  The university policy for requesting such a
-                letter is in
-                \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the
-                Student Code}. Please note that such a letter is appropriate
-                for many types of conflicts, but that religious conflicts
-                require special early handling. In accordance with university
-                policy, students seeking an excused absence for religious
-                reasons should complete the Request for Accommodation for
-                Religious Observances Form, which can be found on the Office of
-                the Dean of Students website. The student should submit this
-                form to the instructor and the Office of the Dean of Students
-                by the end of the second week of the course to which it
-                applies.
+\paragraph{COVID} This course will take place online. If any components of 
+        the course are made available in person, they will be optional. 
+                Following University policy, all students are required to 
+                engage in appropriate behavior to protect the health and safety 
+                of the community, including wearing a facial covering properly, 
+                maintaining social distance (at least 6 feet from others at all 
+                times), disinfecting the immediate seating area, and using hand 
+                sanitizer. Students are also required to follow the campus 
+                COVID-19 testing protocol.
 
-\item[] \textbf{Grade Disputes:} It is important that you understand and agree
+                Students who feel ill must not come to in-person class 
+                activities. In addition, students who test positive for 
+                COVID-19 or have had an exposure that requires testing and/or 
+                quarantine must not attend class.  The University will provide 
+                information to the instructor, in a manner that complies with 
+                privacy laws, about students in these latter categories. These 
+                students are judged to have excused absences for the class 
+                period and should contact the instructor via email about making 
+                up the work.  
+
+                Students who fail to abide by these rules will first be asked 
+                to comply; if they refuse, they will be required to leave the 
+                classroom immediately. If a student is asked to leave the 
+                classroom, the non- compliant student will be judged to have an 
+                unexcused absence and reported to the Office for Student 
+                Conflict Resolution for disciplinary action. Accumulation of 
+                non-compliance complaints against a student may result in 
+                dismissal from the University.  
+
+\paragraph{Emergency response recommendations} can be found at 
+        \href{http://police.illinois.edu/emergency-preparedness/}{this website}. 
+        I encourage you to review this website and the campus building 
+        \href{http://police.illinois.edu/emergency-preparedness/building-emergency-action-plans/}{floor 
+        plans website} within the first 10 days of class.  If you want to 
+        better prepare yourself for any of these situations, visit 
+        \url{police.illinois.edu/safe}. Remember you can sign up for emergency 
+        text messages at \url{emergency.illinois.edu}.
+\paragraph{Make-up Work:} There will be no negotiation about late work 
+        except in the case of absence documented by an absence letter from the 
+        Dean of Students. The university policy for requesting such a letter 
+        is in 
+        \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the 
+        Student Code}. I am sensitive to the global pandemic situation and 
+        COVID-related challenges will be accomodated. Please note that such a 
+        letter is appropriate for many types of conflicts, but that religious 
+        conflicts require special early handling. In accordance with university 
+        policy, students seeking an excused absence for religious reasons 
+        should complete the Request for Accommodation for Religious Observances 
+        Form, which can be found on the Office of the Dean of Students website. 
+        The student should submit this form to the instructor and the Office of 
+        the Dean of Students by the end of the second week of the course to 
+        which it applies.
+
+\paragraph{Grade Disputes:} It is important that you understand and agree
         with the grade you receive on assignments and exams. If you would like
         to dispute your score, you must send an explanation by email to Prof.
         Huff within one week of recieving the grade.
@@ -215,19 +246,74 @@ Integrity Policy and Procedure}.
         will likely still lose points. The homeworks not only evaluate your
         understanding of the material - they also evaluate your ability to
         communicate that understanding clearly and concisely.
+\paragraph{Anti-Racism and Inclusivity Statement} The Grainger College of 
+        Engineering is committed to the creation of an anti-racist, inclusive 
+        community that welcomes diversity along a number of dimensions, 
+        including, but not limited to, race, ethnicity and national origins, 
+        gender and gender identity, sexuality, disability status, class, age, 
+        or religious beliefs. The College recognizes that we are learning 
+        together in the midst of the Black Lives Matter movement, that Black, 
+        Hispanic, and Indigenous voices and contributions have largely either 
+        been excluded from, or not recognized in, science and engineering, and 
+        that both overt racism and micro-aggressions threaten the well-being of 
+        our students and our university community.
+        The effectiveness of this course is dependent upon each of us to create 
+        a safe and encouraging learning environment that allows for the open 
+        exchange of ideas while also ensuring equitable opportunities and 
+        respect for all of us. Everyone is expected to help establish and 
+        maintain an environment where students, staff, and faculty can 
+        contribute without fear of personal ridicule, or intolerant or 
+        offensive language. If you witness or experience racism, 
+        discrimination, micro-aggressions, or other offensive behavior, you are 
+        encouraged to bring this to the attention of the course director if you 
+        feel comfortable. You can also report these behaviors to the 
+        \href{https://bart.illinois.edu/}{Bias Assessment and Response Team 
+        (BART)}.  Based on your report, BART members will follow up and reach 
+        out to students to make sure they have the support they need to be 
+        healthy and safe. If the reported behavior also violates university 
+        policy, staff in the Office for Student Conflict Resolution may respond 
+        as well and will take appropriate action.  
 
-\end{itemize}
+\paragraph{Disability-Related Accommodations}
+To obtain disability-related academic adjustments and/or auxiliary aids, 
+students with disabilities must contact the course instructor and the 
+Disability Resources and Educational Services (DRES) as soon as possible. To 
+contact DRES, you may visit 1207 S. Oak St., Champaign, call 333-4603, e-mail 
+disability@illinois.edu or go to 
+\href{https://www.disability.illinois.edu}{disability.illinois.edu}.  If you 
+are concerned you have a disability-related condition that is impacting your 
+academic progress, there are academic screening appointments available that can 
+help diagnosis a previously undiagnosed disability. You may access these by 
+visiting the DRES website and selecting “Request an Academic Screening” at the 
+bottom of the page.
 
-\paragraph{Accessibility:} I hope that this course will be inclusive and
-accommodating for all learners. As such, I am committed upholding the vision
-and values of \href{http://www.inclusiveillinois.illinois.edu/index.html}{Inclusive Illinois}
-in my
-classroom.  With regard to accommodating all learners, please note that many
-resources are provided through
-\href{http://disability.illinois.edu/academic-support/accommodations}{the
-Division of Disability Resources and Educational Services}.  To request
-particular accommodations, please contact me as soon as possible so that we can
-work out any necessary arrangements.
+\paragraph{Family Educational Rights and Privacy Act (FERPA)}
+Any student who has suppressed their directory information pursuant to Family 
+Educational Rights and Privacy Act (FERPA) should self-identify to the 
+instructor to ensure protection of the privacy of their attendance in this 
+course. See \href{https://registrar.illinois.edu/academic-records/ferpa/}{this 
+link} for more information on FERPA.
+
+\paragraph{Religious Observances}
+Illinois law requires the University to reasonably accommodate its students' 
+religious beliefs, observances, and practices in regard to admissions, class 
+attendance, and the scheduling of examinations and work requirements. You 
+should examine this syllabus at the beginning of the semester for potential 
+conflicts between course deadlines and any of your religious observances. If a 
+conflict exists, you should notify your instructor of the conflict and follow 
+the procedure at 
+\href{https://odos.illinois.edu/community-of-care/resources/students/religious-observances/}{this 
+link} to request appropriate accommodations. This should be done in the first two weeks of classes.
+
+\paragraph{Sexual Misconduct Reporting Obligation:} The University of Illinois is committed to combating sexual misconduct. Faculty and staff members are required to report any instances of sexual misconduct to the University’s Title IX Office. In turn, an individual with the Title IX Office will provide information about rights and options, including accommodations, support services, the campus disciplinary process, and law enforcement options.
+
+A list of the designated University employees who, as counselors, confidential 
+advisors, and medical professionals, do not have this reporting responsibility 
+and can maintain confidentiality, can be found 
+\href{https://wecare.illinois.edu/resources/students/#confidential}{here}.
+Other information about resources and reporting is available here: wecare.illinois.edu.
+
+
 
 \paragraph{Other Resources:}
 University students typically experience a wide range of stressors during their
@@ -244,26 +330,6 @@ soon as they can be of help.
 \item \href{https://odos.illinois.edu/community-of-care/emergency-dean/}{The Emergency Dean}
 \end{itemize}
 
-\paragraph{Run. Hide. Fight.}
-It is important that we take time to prepare for a situation in which our
-safety could depend on our ability to react quickly. Please review the
-university guidance on responding to emergency situations
-\url{https://police.illinois.edu/emergency-preparedness/run-hide-fight/}.
-Take a moment to learn the different ways to leave
-this building. If there’s ever a fire alarm or something like that, you’ll know
-how to get out and you’ll be able to help others get out. Next, figure out the
-best place to go in case of severe weather - we’ll need to go to a low-level in
-the middle of the building, away from windows. And finally, if there’s ever
-someone trying to hurt us, our best option is to run out of the building. If we
-cannot do that safely, we’ll want to hide somewhere we can’t be seen, and we’ll
-have to lock or barricade the door if possible and be as quiet as we can. We
-will not leave that safe area until we get an Illini-Alert confirming that it’s
-safe to do so. If we can’t run or hide, we’ll fight back with whatever we can
-get our hands on. If you want to better prepare yourself for any of these
-situations, visit \url{police.illinois.edu/safe}. Remember you can sign up for
-emergency text messages at \url{emergency.illinois.edu}.
-
-
 
 \pagebreak
 \FloatBarrier
@@ -277,59 +343,56 @@ emergency text messages at \url{emergency.illinois.edu}.
  &  &  &  &  &                                                                                          & \textbf{Given} & \textbf{Due}\\
 \hline
 \hline
-01-22 & 1 & W & Intro      & 1 &           &      &    \\
-01-24 & 1 & F & Overview   & 1 &           &  HW1 &    \\
-01-27 & 2 & M & Overview   & 1 &        Q1 &      &    \\
-01-29 & 2 & W & Economics  & 8 &           &      &    \\
-01-31 & 2 & F & Economics  & 8 &           &  HW2 & HW1\\
-02-03 & 3 & M & Economics  & 8 &        Q2 &      &    \\
-02-05 & 3 & W & Economics  & 8 &           &      &    \\
-02-07 & 3 & F & Economics  & 8 &           &  HW3 & HW2\\
-02-10 & 4 & M & Mining \& Milling & 2 & Q3 &      &    \\
-02-12 & 4 & W & Mining \& Milling & 2 &    &      &    \\
-02-14 & 4 & F & Mining \& Milling & 2 &    &  HW4 & HW3\\
-02-17 & 5 & M & Conversion & 3 &        Q4 &      &    \\
-02-19 & 5 & W & Enrichment & 3 &           &      &    \\
-02-21 & 5 & F & Enrichment & 3 &           &  HW5 & HW4\\
-02-24 & 6 & M & Enrichment & 3 &        Q5 &      &    \\
-02-26 & 6 & W & Enrichment & 3 &           &      &    \\
-02-28 & 6 & F & Fuel Fabrication & 4 &     &  HW6 & HW5\\
-03-02 & 7 & M & Fuel Fabrication & 4 &  Q6 &      &    \\
-03-04 & 7 & W & Reactors & 5 &             &      &    \\
-03-06 & 7 & F & Reactors & 5 &             &  HW7 & HW6\\
-03-09 & 8 & M & Reactors & 5 &          Q7 &      &    \\
-03-11 & 8 & W & Reactors & 5 &             &      &    \\
-03-13 & 8 & F & \textbullet~\textbf{Midterm} \textbullet &  &  &  HW8 & HW7\\
-03-16 & 9 & M & \textbullet~\textbf{No Class} \textbullet &  &  &  & \\
-03-18 & 9 & W & \textbullet~\textbf{No Class} \textbullet &  &  &  & \\
-03-20 & 9 & F & \textbullet~\textbf{No Class} \textbullet &  &  &  & \\
-03-23 & 10 & M & Fuel In-Core & 6 &    Q9  &       & \\
-03-25 & 10 & W & Fuel In-Core & 6 &        &       & \\
-03-27 & 10 & F & Reprocessing & 7 &        &   HW9 & HW8\\
-03-30 & 11 & M & Reprocessing & 7 &    Q10 &       & \\
-04-01 & 11 & W & Reprocessing & 7 &        &       & \\
-04-03 & 11 & F & Reprocessing & 7 &        &  HW10 & HW9\\
-04-06 & 12 & M & Reprocessing & 7 &    Q11 &       & \\
-04-08 & 12 & W & HLW & 9 &                 &       & \\
-04-10 & 12 & F & HLW & 9 &                 &  HW11 & HW10\\
-04-13 & 13 & M & HLW & 9 &             Q12 &       & \\
-04-15 & 13 & W & HLW & 9 &                 &       & \\
-04-17 & 13 & F & HLW & 9 &                 &  HW12 & HW11\\
-04-20 & 14 & M & LLW & 10 &             Q13 &       & \\
-04-22 & 14 & W & LLW & 10 &                &       & \\
-04-24 & 14 & F & Nonproliveration & 11 &   &  HW13 & HW12\\
-04-27 & 15 & M & Nonproliferation & 11 & Q14 &     & \\
-04-29 & 15 & W & Environment & 12 &        &       & \\
-05-01 & 15 & F & Environment & 12 &        &       & HW13\\
-05-04 & 16 & M & Environment & 12 &    Q15 &       & \\
-05-06 & 16 & W & Environment & 12 &        &       & \\
-05-12 & 17 & T & \textbullet~\textbf{Presentations} \textbullet &  &  &  & \\
+01-25 & 1 & M & Intro      & 1 &           &      &    \\
+01-27 & 1 & W & Overview   & 1 &           &      &    \\
+01-29 & 1 & F & Economics  & 8 &           &  HW2 & HW1\\
+02-01 & 2 & M & Economics  & 8 &        Q1 &      &    \\
+02-03 & 2 & W & Economics  & 8 &           &      &    \\
+02-05 & 2 & F & Economics  & 8 &           &  HW3 & HW2\\
+02-08 & 3 & M & Economics  & 8 &        Q2 &      &    \\
+02-10 & 3 & W & Mining \& Milling & 2 &    &      &    \\
+02-12 & 3 & F & Mining \& Milling & 2 &    &  HW4 & HW3\\
+02-15 & 4 & M & Mining \& Milling & 2 & Q3 &      &    \\
+02-17 & 4 & W & \textbf{No Class} &  &    &      &    \\
+02-19 & 4 & F & Conversion & 3 &           &  HW5 & HW4\\
+02-22 & 5 & M & Enrichment & 3 &        Q4 &      &    \\
+02-24 & 5 & W & Enrichment & 3 &           &      &    \\
+02-26 & 5 & F & Enrichment & 3 &           &  HW6 & HW5\\
+03-01 & 6 & M & Fuel Fabrication & 4 &  Q5 &      &    \\
+03-03 & 6 & W & Fuel Fabrication & 4 &     &      &    \\
+03-05 & 6 & F & Fuel Fabrication & 4 &     &  HW7 & HW6\\
+03-08 & 7 & M & Reactors & 5 &          Q6 &      &    \\
+03-10 & 7 & W & Reactors & 5 &             &      &    \\
+03-12 & 7 & F & Reactors & 5 &             &  HW8 & HW7\\
+03-15 & 8 & M & Reactors & 5 &          Q7 &      &    \\
+03-17 & 8 & W & Fuel In-Core & 6 &             &      &     \\
+03-19 & 8 & F & Fuel In-Core & 6 &         &  HW9 & HW8 \\
+03-22 & 9 & M & Fuel In-Core & 6 &      Q8 &      &   \\
+03-24 & 9 & W & \textbf{No Class} &  &    &       &     \\
+03-26 & 9 & F & Reprocessing & 7 &         &  HW10 & HW9 \\
+03-29 & 10 & M & Reprocessing & 7 &     Q9 &       &     \\
+03-31 & 10 & W & Reprocessing & 7 &        &       &     \\
+04-02 & 10 & F & Reprocessing & 7 &        &  HW11 & HW10\\
+04-05 & 11 & M & Reprocessing & 7 &    Q10 &       &     \\
+04-07 & 11 & W & Reprocessing & 7 &         &       &    \\
+04-09 & 11 & F & HLW & 9 &                 &  HW12 & HW11\\
+04-12 & 12 & M & HLW & 9 &             Q11 &       &     \\
+04-14 & 12 & W & HLW & 9 &   &       &     \\
+04-16 & 12 & F & HLW & 9 &                 &  HW13 & HW12\\
+04-19 & 13 & M & LLW & 10 &             Q12 &       &     \\
+04-21 & 13 & W & LLW & 10 &                &       &     \\
+04-23 & 13 & F & LLW & 10 &                &  HW14 & HW13\\
+04-26 & 14 & M & Nonproliferation & 11 & Q13 &     &     \\
+04-28 & 14 & W & Nonproliferation & 11 &   &       &     \\
+04-30 & 14 & F & Environment & 12 &        &       & HW14\\
+05-03 & 15 & M & Environment & 12 &    Q14 &       &     \\
+05-05 & 15 & W & Environment & 12 &        &       &     \\
+05-14 & 16 & F & \textbullet~\textbf{Presentations} \textbullet &  &  &  & \\
 \end{tabular}
 \end{center}
 \end{table}
 \FloatBarrier
-
+\end{document}
 
 
 %%%%%% THE END 
-\end{document} 
