@@ -19,7 +19,7 @@ for dir in $SUB_DIRS
 do 
   cd $TOP_DIR/$dir 
   echo $PWD
-  latexmk -pdf 
+  latexmk -f -pdf 
 done
 cd $TOP_DIR
 
