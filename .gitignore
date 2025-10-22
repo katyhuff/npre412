@@ -5,3 +5,5 @@
 *.fls
 *_latexmk
 *.log
+.ipynb_checkpoints
+.DS_Store
