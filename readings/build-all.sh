@@ -3,7 +3,7 @@
 
 # Let the person running the script know what's going on.
 echo -e "\n\033[1mChanging some dates...\033[0m\n"
-find . -type f -name "*.tex" -print0 | xargs -0 sed -i '' -e 's/Spring\ 2020/Spring\ 2021/g'
+find . -type f -name "*.tex" -print0 | xargs -0 sed -i '' -e 's/2025\(\.[0-9]*\.[0-9]*\.[0-9]*[0-9]*\)/2026\1/g'
 
 cd ~/repos/npre412/readings
 # Find all directories here - that are at least 1 level down, but don't go any
